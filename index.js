@@ -48,7 +48,7 @@ if(remainder2 == 0){
 }
 
 
-console.log(`${remainder2}${remainder1}`)
+console.log(`The hexadecimal for ${decimal} is: ${remainder2}${remainder1}`)
 
 // Sets all the numbers for the binary to 0
 let binary1 = 0;
@@ -61,6 +61,7 @@ let binary7 = 0;
 let binary8 = 0;
 
 // This part is like a filter, if the number is big enough to touch one part some of it will be removed so its small enough to go through to the next smaller filter.
+let finalDecimal = decimal
 if(decimal >= 128)
 {
 	decimal -= 128;
@@ -104,8 +105,8 @@ if(decimal >= 1)
 
 // If the number is small enough, theres no need to show the first set of zeros (Example: 0000 1010)
 if(binary1 + binary2 + binary3 + binary4 == 0){
-	console.log(`${binary5}${binary6}${binary7}${binary8}`)
+	console.log(`The binary for ${finalDecimal} is: ${binary5}${binary6}${binary7}${binary8}`)
 }
 else{
-	console.log(`${binary1}${binary2}${binary3}${binary4} ${binary5}${binary6}${binary7}${binary8}`);
+	console.log(`The binary for ${finalDecimal} is: ${binary1}${binary2}${binary3}${binary4} ${binary5}${binary6}${binary7}${binary8}`);
 }
