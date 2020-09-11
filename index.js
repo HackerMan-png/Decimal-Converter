@@ -5,6 +5,7 @@ remainder1 = decimal % 16
 decimal1  = decimal / 16
 remainder2 = Math.floor(decimal1) % 16
 
+// This will find the number for the second value that shows up
 if(remainder1 == 10){
     remainder1 = "A"
 }
@@ -23,7 +24,7 @@ if(remainder1 == 14){
 if(remainder1 == 15){
     remainder1 = "F"
 }
-
+// This will find the value for the first value that shows up
 if(remainder2 == 10){
     remainder2 = "A"
 }
@@ -49,7 +50,7 @@ if(remainder2 == 0){
 
 console.log(`${remainder2}${remainder1}`)
 
-
+// Sets all the numbers for the binary to 0
 let binary1 = 0;
 let binary2 = 0;
 let binary3 = 0;
@@ -58,6 +59,8 @@ let binary5 = 0;
 let binary6 = 0;
 let binary7 = 0;
 let binary8 = 0;
+
+// This part is like a filter, if the number is big enough to touch one part some of it will be removed so its small enough to go through to the next smaller filter.
 if(decimal >= 128)
 {
 	decimal -= 128;
@@ -99,6 +102,7 @@ if(decimal >= 1)
 	binary8 = 1;
 }
 
+// If the number is small enough, theres no need to show the first set of zeros (Example: 0000 1010)
 if(binary1 + binary2 + binary3 + binary4 == 0){
 	console.log(`${binary5}${binary6}${binary7}${binary8}`)
 }
