@@ -46,4 +46,56 @@ if(remainder2 == 0){
     remainder2 = ""
 }
 
-    console.log(`${remainder2}${remainder1}`)
+
+console.log(`${remainder2}${remainder1}`)
+
+
+let binary1 = 0;
+let binary2 = 0;
+let binary3 = 0;
+let binary4 = 0;
+let binary5 = 0;
+let binary6 = 0;
+let binary7 = 0;
+let binary8 = 0;
+if(decimal >= 128)
+{
+	decimal -= 128;
+	binary1=1;    
+}
+if(decimal >= 64)
+{
+	decimal -= 64;
+	binary2 = 1;
+}
+if(decimal >= 32)
+{
+	decimal -= 32;
+	binary3 = 1;
+}
+if(decimal >= 16)
+{
+	decimal -= 16;
+	binary4 = 1;
+}
+if(decimal >= 8)
+{
+	decimal -= 8;
+	binary5 = 1;
+}
+if(decimal > 4)
+{
+	decimal -= 4;
+	binary6 = 1;
+}
+if(decimal >= 2)
+{
+	decimal -= 2;
+	binary7 = 1
+}
+if(decimal >= 1)
+{
+	decimal -= 1;
+	binary8 = 1;
+}
+console.log(`${binary1}${binary2}${binary3}${binary4} ${binary5}${binary6}${binary7}${binary8}`);
