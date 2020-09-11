@@ -98,4 +98,10 @@ if(decimal >= 1)
 	decimal -= 1;
 	binary8 = 1;
 }
-console.log(`${binary1}${binary2}${binary3}${binary4} ${binary5}${binary6}${binary7}${binary8}`);
+
+if(binary1 + binary2 + binary3 + binary4 == 0){
+	console.log(`${binary5}${binary6}${binary7}${binary8}`)
+}
+else{
+	console.log(`${binary1}${binary2}${binary3}${binary4} ${binary5}${binary6}${binary7}${binary8}`);
+}
