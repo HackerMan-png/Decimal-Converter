@@ -1,18 +1,24 @@
 
 body{
-    color:rgb(255, 255, 255);
-    background: url(file:///C:/Users/david/Downloads/iubjnkjbj.png);
+    color:rgb(0, 0, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 600;
     text-align: center;
     font-size: x-large;
     border: 30px mintcream;
+    
+    height: 100vh;
+	background:
+		linear-gradient(-135deg, rgba(0, 255, 0, 0) , transparent),
+		repeating-linear-gradient(180deg, rgb(0, 255, 0) , rgb(0, 0, 0) , transparent , transparent ),
+		repeating-linear-gradient(0deg, rgb(0, 255, 0) , rgb(0, 0, 0) , transparent , transparent );
+background-color: rgb(0, 0, 0);
 
 }
 h1{    
     font-family: monospace;
     font-style: normal;
-    color:rgb(0, 173, 14);
+    color:rgb(0, 0, 0);
     font-weight: 600;
     text-align: center;
     
